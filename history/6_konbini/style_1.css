@@ -1,0 +1,42 @@
+body{margin: 0;}
+
+header{background-color: #3bb2b8;}
+
+table{width: 100%;}
+
+.right{
+  vertical-align: top;
+  text-align: right;
+  padding: 2%;
+}
+
+.left_inner{
+
+}
+
+.left_inner_image{
+  width: 40%;
+  margin: 0 0 3% 15%;
+}
+
+.right_inner{
+  padding: 2%;
+  background-color: orange;
+}
+
+.right_inner_link{
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 0 5%;
+}
+
+.bottom{
+  text-align: center;
+  padding: 2%;
+}
+
+.bottom_inner{
+  width: 40%;
+}

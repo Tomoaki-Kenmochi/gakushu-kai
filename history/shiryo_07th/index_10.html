@@ -1,0 +1,211 @@
+<!-- div と floatを使ったコードの例です -->
+
+<!-- コメントアウトの仕方　Macであれば「command」+「/」、Windowsであれば「Ctrl」+「/」を押します。 -->
+
+<!-- ファイルのドキュメントタイプ HTML5以降、仕様が変わり必要ではなくなったが、コンピューターの処理上、念の為に記載が必要-->
+<!DOCTYPE html>
+
+<!-- このHTMLファイルが、日本語で出力される事の表明（念のために記載） -->
+<html lang="ja">
+
+<!-- HTMLのheadダグ ここでファイルの挙動に関する設定を記述 -->
+
+<head>
+
+  <!-- ページの横幅の初期値を、表示するディスプレイの大きさと一致させる-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 文字のエンコーディングの種類　ここでは日本語　他に euc-jp shift_jis がある（文字化けする）-->
+  <meta charset="UTF-8">
+
+  <!-- stylesheet で使うファイル名（相対パスまたは絶対パス） -->
+  <link rel="stylesheet" href="style_10.css">
+
+  <!-- ページのタイトル -->
+  <title>デモページ｜COMOLYのランディングページ</title>
+
+</head>
+
+<!-- ここから下のbodyで囲まれた範囲のコードが、直接、ページの内容に反映される部分になります -->
+
+<body>
+  <!-- floatで生じる背景色のわずかな切れ目への対策 -->
+  <div class="top">
+    <!-- ヘッダー部分 -->
+    <div class="header_1">
+
+      <!-- ヘッダーの左側の部分 -->
+      <div class="left">
+        <a href="#">
+          <img src="images/logo_white.png" class="left_image">
+        </a>
+      </div>
+      <!-- ヘッダーの右側の部分 -->
+      <div class="right">
+        <!-- この中を更にfloatで横並びにすると非常に面倒だったのでinline要素のspanを使ってます -->
+        <a class="right_link" href="#">
+          <span class="right_text">
+            Q&A
+          </span>
+        </a>
+        <a class="right_link" href="＃">
+          <span class="right_text">
+            ログイン
+          </span>
+        </a>
+        <a class="right_link" href="＃">
+          <span class="right_text">
+            新規登録
+          </span>
+        </a>
+      </div>
+
+      <!-- ヘッダーここまで -->
+    </div>
+
+    <!-- ヘッダーの下の大きな画像（ひきこもってもつながれる） -->
+
+    <div class="bottom">
+      <img src="images/mac-image.png" class="bottom_inner">
+    </div>
+  </div>
+
+  <!-- 背景が緑色の部分はここまで -->
+
+  <!-- /* COMOLY の説明文 */ -->
+  <div class="header_2">COMOLYとは？</div>
+
+  <!-- /* 横並びの部分 */ -->
+  <div class="intro_1">
+    <!-- /* 右側の画像部分。この場合、floatの性質上、先に右側に回り込む画像から書く方が楽です */ -->
+
+
+    <!-- /* 左側のテキスト */ -->
+
+    <img src="images/Man talking in Living Room.png" class="intro_1_right">
+
+
+    <div class="intro_1_left">
+      COMOLYはひきこもり当事者向けに
+      <b class="intro_1_left_bold">ワーク・コミュニティ</b>
+      を提供し安心して繋がれるプラットフォームです
+    </div>
+
+    <a class="intro_1_left_link" href="#">
+      <div class="intro_1_left_button">登録してみる</div>
+    </a>
+  </div>
+
+  <br><br><br>
+
+  <!-- /* 横並びの部分 */ -->
+  <div class="intro_2">
+    <!-- /* 右側の画像部分。この場合、floatの性質上、先に右側に回り込む画像から書く方が楽です */ -->
+
+
+    <!-- /* 左側のテキスト */ -->
+    <div class="float_wrap">
+
+      <div class="intro_2_right">
+        <p>「flaot」「flaot」「flaot」「flaot」「flaot」「flaot」「flaot」</p>
+      </div>
+
+
+      <div class="intro_2_left">
+        COMOLYはひきこもり当事者向けに
+        <b class="intro_2_left_bold">ワーク・コミュニティ</b>
+        を提供し安心して繋がれるプラットフォームです
+      </div>
+
+      <div>
+        <a class="intro_2_left_link" href="#">
+          <div class="intro_2_left_button">登録してみる</div>
+        </a>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <br><br><br>
+
+
+  <div class="top">
+    <!-- ヘッダー部分 -->
+    <div class="header_1">
+
+      <!-- ヘッダーの左側の部分 -->
+      <div class="left">
+        <a href="#">
+          <img src="images/logo_white.png" class="left_image">
+        </a>
+      </div>
+      <!-- ヘッダーの右側の部分 -->
+      <div class="right">
+        <!-- この中を更にfloatで横並びにすると非常に面倒だったのでinline要素のspanを使ってます -->
+        <a class="right_link" href="#">
+          <span class="right_text">
+            Q&A
+          </span>
+        </a>
+        <a class="right_link" href="＃">
+          <span class="right_text">
+            ログイン
+          </span>
+        </a>
+        <a class="right_link" href="＃">
+          <span class="right_text">
+            新規登録
+          </span>
+        </a>
+      </div>
+
+      <!-- ヘッダーここまで -->
+    </div>
+
+    <!-- ヘッダーの下の大きな画像（ひきこもってもつながれる） -->
+
+    <div class="bottom">
+      <img src="images/mac-image.png" class="bottom_inner">
+    </div>
+  </div>
+
+
+
+  <!-- /* 横並びの部分 */ -->
+  <!-- <div class="intro_3"> -->
+  <!-- /* 右側の画像部分。この場合、floatの性質上、先に右側に回り込む画像から書く方が楽です */ -->
+
+
+  <!-- /* 左側のテキスト */ -->
+  <div class="float_wrap_3">
+    <p>親のブロック要素(黄色い背景色)</p>
+
+    <div class="intro_3_right">
+      <p>float を使っているブロック要素（透明な緑の背景色）</p>
+      <!-- <img src="images/logo_white.png" class="left_image"> -->
+    </div>
+
+    <div class="intro_3_right">
+      <p>float を使っているブロック要素（透明な緑の背景色）</p>
+      <!-- <img src="images/logo_white.png" class="left_image"> -->
+    </div>
+
+
+    <div class="intro_3_left">
+      float を使っていないブロック要素（黒い背景色）
+    </div>
+
+  </div>
+
+  <!-- </div> -->
+
+  <footer class="foot">
+    フッター
+  </footer>
+
+
+</body>
+
+</html>

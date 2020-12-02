@@ -1,0 +1,78 @@
+<!-- div と floatを使ったコードの例です -->
+
+<!-- コメントアウトの仕方　Macであれば「command」+「/」、Windowsであれば「Ctrl」+「/」を押します。 -->
+
+<!-- ファイルのドキュメントタイプ HTML5以降、仕様が変わり必要ではなくなったが、コンピューターの処理上、念の為に記載が必要-->
+<!DOCTYPE html>
+
+<!-- このHTMLファイルが、日本語で出力される事の表明（念のために記載） -->
+<html lang="ja">
+
+<!-- HTMLのheadダグ ここでファイルの挙動に関する設定を記述 -->
+
+<head>
+
+  <!-- ページの横幅の初期値を、表示するディスプレイの大きさと一致させる-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 文字のエンコーディングの種類　ここでは日本語　他に euc-jp shift_jis がある（文字化けする）-->
+  <meta charset="UTF-8">
+
+  <!-- stylesheet で使うファイル名（相対パスまたは絶対パス） -->
+  <link rel="stylesheet" href="style_12.css">
+
+  <!-- ページのタイトル -->
+  <title>デモページ｜COMOLYのランディングページ</title>
+
+</head>
+
+<!-- ここから下のbodyで囲まれた範囲のコードが、直接、ページの内容に反映される部分になります -->
+
+<body>
+  <div class="top">
+    <p>ヘッダー</p>
+  </div>
+
+
+
+
+  <!-- /* 横並びの部分 */ -->
+  <!-- <div class="intro_3"> -->
+  <!-- /* 右側の画像部分。この場合、floatの性質上、先に右側に回り込む画像から書く方が楽です */ -->
+
+
+  <!-- /* 左側のテキスト */ -->
+  <div class="float_wrap_3">
+    <p>親のブロック要素(黄色い背景色)</p>
+
+    <div class="intro_3_right">
+      <p>float を使っているブロック要素（透明な緑の背景色）</p>
+      <!-- <img src="images/logo_white.png" class="image"> -->
+    </div>
+
+    <div class="intro_3_right">
+      <p>float を使っているブロック要素（透明な緑の背景色）</p>
+      <!-- <img src="images/logo_white.png" class="image"> -->
+    </div>
+
+
+    <div class="intro_3_left">
+      float を使っていないブロック要素（黒い背景色）
+    </div>
+
+    <div class="after">
+      clearfix
+    </div>
+
+  </div>
+
+  <!-- </div> -->
+
+  <footer class="foot">
+    フッター
+  </footer>
+
+
+</body>
+
+</html>

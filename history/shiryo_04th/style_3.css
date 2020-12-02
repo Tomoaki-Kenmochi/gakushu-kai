@@ -1,0 +1,37 @@
+body{margin: 0;}
+
+header{background-color: teal;}
+
+table{width: 100%;}
+
+.right{
+  vertical-align: top;
+  text-align: right;
+  padding: 30px;
+}
+
+.left_inner{
+
+}
+.left_inner_image{
+  height: 100px;
+  margin: 0 0 15px 15%;
+}
+.right_inner{
+  padding: 15px;
+  background-color: orange;
+}
+.right_inner_link{
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 0 15px;
+}
+.bottom{
+  text-align: center;
+  padding: 30px;
+}
+.bottom_inner{
+  height: 600px;
+}

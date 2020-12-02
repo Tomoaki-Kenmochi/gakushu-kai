@@ -1,0 +1,110 @@
+
+/* bodyにつく初期値を除去 */
+body{
+  margin: 0;
+  color:#444141;}
+
+/* URLリンクに付くデザインの初期値を除去 */
+a {
+  text-decoration: none;
+}
+
+/* ヘッダー*/
+.top{
+  height: 20vh;
+  background-color: #3bb2b8;
+  font-size: 3rem;
+  text-align: center;
+
+}
+
+
+.image{
+  width: 40%;
+}
+
+
+
+/* float をつかった横並びの */
+.intro_3{
+  width: 50%;
+  margin: 10vh auto;
+  padding: 20vh 20%;
+  height: 80vh;
+  background-color: red;
+}
+
+.float_wrap_3{
+  /* height: 60vh; */
+  /* padding: 20vh 20%; */
+  /* ここでの縦幅の margin と padding がきかない  */
+  background-color: yellow;
+  border: solid 10px red;
+  font-size: 2rem;
+  overflow: auto;
+  /* これで float の要素に高さを与える */
+}
+
+/* 右側の部分。floatの性質上、先に右側に回り込む画像から書きます。 */
+.intro_3_right{
+  margin: 0 0 0 5%;
+  width: 25%;
+  float: right;
+  font-size: 2rem;
+  height: 50vh;
+  background-color: rgba(0,128,0,0.7);
+  border: turquoise 10px solid;
+  color: white;
+}
+p {
+  margin: 0;
+}
+
+/* 左側のテキスト */
+.intro_3_left{
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  height: 30vh;
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}
+.intro_3_left_bold{
+  color: #0cd4ec;
+  border-bottom: 15px solid #c0eff1;
+}
+.intro_3_left_link
+{
+}
+.intro_3_left_button{
+  background-color: #ff5858;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 1vh 1%;
+  margin: 3vh 0 0 15%;
+  width: 25%;
+}
+
+
+/* .float_wrap_3::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.after{
+  clear: both;
+}
+
+/* フッター */
+.foot{
+  background-color: blue;
+  height: 20vh;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}

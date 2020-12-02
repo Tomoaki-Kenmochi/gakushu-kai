@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.emphasise{
+  color: #0cd4ec;
+  background: linear-gradient(transparent 60%, #c0eff1 30%);
+  font-weight: bold;
+}
+.heading{
+  text-align: center;
+  margin: 30px 0;
+}
+h2{
+  font-size: 40px;
+  color: #0cd4ec;
+  background: linear-gradient(transparent 60%, #c0eff1 30%);
+  display: inline-block;
+}
+h3{
+  font-size: 28px;
+  color: #65676c;
+}
+
+body{
+  color: #444141;
+}
+.top-wrapper{
+  background: #2cccd4;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+.logo img{
+  width: 220px;
+  margin-left: 100px;
+}
+.header-nav ul{
+  padding: 20px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-nav-btn{
+  color: white;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.header-nav-btn.signup{
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+.header-nav-btn:hover{
+  background: #f69c2f;
+}
+
+section{
+  margin-bottom: 100px;
+}
+.container{
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.top{
+  text-align: center;
+}
+.top img{
+  width: 60%;
+  padding-bottom: 30px;
+}
+.what-is-comoly-left{
+  float: left;
+  width: 45%;
+}
+.what-is-comoly-right{
+  float: left;
+  width: 48%;
+}
+.what-is-comoly-right img{
+  width: 100%;
+  padding-top: 42px;
+  margin-left: 10px;
+}
+.what-is-comoly-text{
+  font-size: 2em;
+  line-height: 2em;
+  letter-spacing: 0.2em;
+  margin: 50px 0;
+}
+.btn{
+  width: 80%;
+  text-align: center;
+  display: block;
+  margin: 70px auto 100px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.2));
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  border-radius: 45px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 5px;
+  transition: .15s ease-in-out;
+}
+.btn:hover{
+  color: #0056b3;
+}
+
+.work-left{
+  float: left;
+  width: 45%;
+}
+.work-left img{
+  width: 100%;
+}
+.work-right{
+  float: left;
+  width: 48%;
+}
+.description{
+  font-size: 20px;
+  line-height: 2em;
+  padding: 5%;
+  box-shadow: 10px 10px 15px -10px #c0eff1;
+  border-radius: 10px;
+}
+
+.works{
+  max-width: 75%;
+  margin: 80px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.works img{
+  margin-bottom: 10px;
+}
+
+.community-left{
+  float: left;
+  width: 45%;
+}
+.community-right{
+  float: left;
+  width: 48%;
+}
+.community-right img{
+  width: 80%;
+  padding: 15px 0 0 71px;
+}
+.community .btn{
+  width: 50%;
+}
+.info{
+  line-height: normal;
+}
+.event{
+  border-bottom: 1px solid rgba(0,0,0,0.125);
+  padding: 20px;
+}
+.event>a{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.event:hover{
+  background: rgba(38,185,154,0.07);
+}
+.event>a:hover{
+  background: rgba(38,185,154,0.07);
+  color: #0056b3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.event-category{
+  width: 15%;
+  text-align: center;
+  color: white;
+  background: #ffd464;
+  line-height: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.event-date{
+  width: 25%;
+  padding: 0 20px 0 30px;
+  font-size: 20px;
+  color: #73879c;
+}
+.event-title{
+  width: 60%;
+  color: #007bff;
+  font-size: 18px;
+}
+.staff-blog{
+  margin: 50px auto 0;
+  width: 70%;
+}
+.staff-blog img{
+  width: 100%;
+}
+footer{
+  padding: 48px 0 24px;
+  background: #2cccd4;
+  color: white;
+}
+.footer-left{
+  float: left;
+  width: 75%;
+}
+.footer-right{
+  float: left;
+  width: 25%;
+}
+.footer-nav a{
+  color: white;
+}
+.sns ul{
+  display: flex;
+}
+.sns img{
+  width: 40px;
+  margin: 10px 10px 0 0;
+}
+.copyright{
+  text-align: center;
+}
+
+@media (max-width:1200px){
+  .container{
+    max-width: 960px;
+  }
+}
+@media (max-width:992px){
+  .container{
+    max-width: 720px;
+  }
+  .what-is-comoly-right, .work-left, .community-right{
+    display: none;
+  }
+  .what-is-comoly-left, .work-right, .community-left{
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width:768px){
+  .container{
+    max-width: 540px;
+  }
+  .logo img{
+    margin-left: 20px;
+    width: 120px;
+  }
+  .signup, .footer-right, .what-is-comoly .btn{
+    display: none;
+  }
+  .what-is-comoly-text{
+    font-size: 1.5em;
+  }
+  .what-is-comoly-right{
+    display: block;
+    width: 95%;
+  }
+  .works img{
+    width: 120px;
+  }
+  .community .btn{
+    width: 80%;
+    margin: 60px auto 20px;
+    padding: 10px;
+    font-size: 22px;
+  }
+  .event-category{
+    width: auto;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .event-date{
+    width: auto;
+    font-size: 16px;
+  }
+  .event-title{
+    width: 100%;
+  }
+  .footer-nav{
+    font-size: 14px;
+  }
+  .copyright{
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px){
+  .container{
+    max-width: 100%;
+  }
+  
+}

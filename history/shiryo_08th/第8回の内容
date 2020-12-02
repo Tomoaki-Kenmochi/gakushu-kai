@@ -1,0 +1,47 @@
+今回の内容のまとめです。
+● float の挙動の確認と clearfix の説明 前回の内容を振り返りつつ、以下の記事と添付した資料で説明します。
+https://www.w3schools.com/howto/howto_css_clearfix.asp
+
+● その他の参考リンク
+擬似要素
+https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-elements
+
+::after
+https://developer.mozilla.org/ja/docs/Web/CSS/::after
+
+clear
+https://developer.mozilla.org/ja/docs/Web/CSS/clear
+
+実例
+https://www.asobou.co.jp/blog/web/css2
+https://web-manabu.com/html-css39/
+
+
+● ゆうひさんの課題
+margin のズレ（float)
+
+● Twitter の埋め込み方
+https://help.twitter.com/ja/using-twitter/embed-twitter-feed
+
+● ちばっしーさんとffさんの課題（お手本）
+ちばっしーさんの特徴
+・bootstrap を使っている（row と col）
+・Font-awesome の css を使っている（footer のアイコン）
+
+ffさんの特徴
+・Font-awesome の css を使っている（footer のアイコン）
+・Float(ヘッダーのロゴと横並びメニュー、説明と画像の横並び)、clearfix の仕方（cb という名前のクラスに clear: both;）
+・レスポンシブ(float の解除、画像を display: none; で非表示)
+・Ul li の使い方 （横並び）
+
+● 特殊な css の使い方（mata タグ　 の貼り方）
+Bootstrap
+https://getbootstrap.jp/docs/4.5/getting-started/introduction/
+
+Font-awesome
+https://fontawesome.com/
+
+
+● 拡張機能について、時間があれば説明します。
+
+● 質問タイム

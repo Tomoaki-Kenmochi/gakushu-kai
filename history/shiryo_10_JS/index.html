@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript第１回</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- JavaScriptを別ファイルから読み込む為のコード（src="???.js" の部分でパスを指定） -->
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="text-center mt-5 mb-5">
+
+        <p id="jump" class="mx-auto w-25 border border-warning rounded-pill p-2 m-5">
+            <b>1番下のボタンを押すと、ここまで移動します</b>
+        </p>
+
+        <p id="color" class="mx-auto w-25 border border-success rounded-pill p-2 m-5">
+            <b>緑のボタンを押すと、このテキストの色が変わります</b>
+        </p>
+
+        <p id="color_2" class="mx-auto w-50 border border-danger rounded-pill p-2 m-5">
+            <b>赤のボタンを押す度に、このテキストの色が切り替わります</b>
+        </p>
+
+        <button type="button" class="btn btn-primary btn-lg m-2" onclick="hello()">Hello!</button>
+
+        <button type="button" class="btn btn-success btn-lg m-2" onclick="color()">Color</button>
+
+        <button type="button" class="btn btn-danger btn-lg m-2" onclick="color_2()">色が切り替わります</button>
+
+        <button type="button" class="btn btn-warning btn-lg m-2" onclick="bottom()">下まで移動</button>
+
+        <br><br><br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>↓<br><br><br>
+
+        <button id="bottom" type="button" class="btn btn-info btn-lg m-2" onclick="jump()">押して上まで移動</button>
+
+    </div>
+
+    <!-- JavaScript を HTML ファイルから読み込む為のコード（body 内の最下部に置く。先に上から順に、body の中身を読み込む必要がある為） -->
+    <script>
+
+    </script>
+
+</body>
+
+</html>

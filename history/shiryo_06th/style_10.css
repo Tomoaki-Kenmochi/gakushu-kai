@@ -1,0 +1,118 @@
+
+/* bodyにつく初期値を除去 */
+body{
+  margin: 0;
+  color:#444141;}
+
+/* URLリンクに付くデザインの初期値を除去 */
+a {
+  text-decoration: none;
+}
+
+/* floatで生じる背景色のわずかな切れ目への対策*/
+.top{
+  background-color: #3bb2b8;
+}
+
+/* ヘッダー部分 */
+.header_1{
+
+}
+
+/* ヘッダーの左側部分 */
+.left{
+  float: left;
+  padding: 2vh 3%;
+  /* vhは上下の幅で高さを指定する際に使う（viewport height、相対値） */
+}
+
+/* 画像に直接当たっているクラス。ここで幅を指定すると楽です。 */
+.left_image{
+  width: 40%;
+}
+
+/* ヘッダーの右側の部分 */
+.right{
+  padding: 5vh 1%;
+  text-align: right;
+  height: 20vh;
+}
+.right_link{
+  color: white;
+
+}
+.right_text{
+  margin: 0 1%;
+  padding: 2vh 1%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: orange;
+}
+/* ヘッダーここまで */
+
+/* ヘッダーの下の大きな画像（ひきこもってもつながれる） */
+
+.bottom{
+  background-color: #3bb2b8;
+  height: 66vh;
+  text-align: center;
+}
+
+/* 画像に直接当たっているクラス。ここで幅を指定すると楽です。 */
+.bottom_inner{
+  width: 30%;
+}
+
+/* 背景が緑色の部分はここまで */
+
+/* COMOLY の説明文 */
+.header_2{
+  text-align: center;
+  color: #0cd4ec;
+  font-size: 2.5rem;
+  border-bottom: 15px solid #c0eff1;
+  margin: 10vh 40% 0;
+}
+.header_3{
+  text-align: center;
+  margin: 3vh 0 0 0;
+  font-size: 1.5rem;
+}
+
+/* 横並びの部分 */
+.intro_1{
+  width: 50%;
+  margin: 10vh auto;
+}
+
+/* 右側の画像部分。この場合、floatの性質上、先に右側に回り込む画像から書く方が楽です */
+.intro_1_right{
+  margin: 0 0 0 5%;
+  width: 35%;
+  float: right;
+}
+
+/* 左側のテキスト */
+.intro_1_left{
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.intro_1_left_bold{
+  color: #0cd4ec;
+  border-bottom: 15px solid #c0eff1;
+}
+.intro_1_left_link
+{
+}
+.intro_1_left_button{
+  background-color: #ff5858;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 1vh 1%;
+  margin: 3vh 0 0 15%;
+  width: 25%;
+}
+

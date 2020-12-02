@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    margin:0 auto;
+    max-width:1000px;
+   
+}
+
+.main{
+    background-color:#2cccd4;
+    height:100vh;
+    text-align: center;
+}
+
+header{
+  width:100%;
+  position: relative;
+  top:0;
+  height:80px;
+  margin-bottom:50px;
+  overflow:hidden;
+}
+
+.header-left{
+    float:left;
+    width:25%;
+}
+
+.logo{
+    width:100%;
+}
+
+.header-right{
+    float:right;
+    width:75%;
+}
+
+.header-right ul{
+    float:right;
+    width:100%;
+    overflow:hidden;
+}
+
+.header-right li{
+    float:right;
+    width:15%;
+    list-style:none;
+    margin-left:5px;
+    text-align:center;
+    height:40px;
+    line-height:40px;
+    margin-top:20px;
+    color:white;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+.header-right li:hover{
+    background-color: orange;
+}
+
+.new{
+    background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+
+.new:hover{
+    background: #f09819;
+}
+
+.mac{
+    width:55%;
+    float:none;
+    margin:0 auto;
+    
+}
+
+@media screen and (max-width: 768px)  { 
+    header{
+        margin-bottom:120px;
+    }
+    .header-left{
+        width:35%;
+    }
+    .header-right{
+        width:65%;
+    }
+    .header-right li{
+        width:20%;
+    }
+}
+   
+
+@media screen and (max-width: 480px)  {
+    header{
+        margin-bottom:30px;
+        height:250px;
+    }
+    .header-left{
+        width:100%;
+        float:none;
+    }
+    .header-right{
+        width:100%;
+        float:none;
+    }
+    .logo{
+        margin-top:30px;
+        margin-bottom:20px;
+        width:30%;
+    }
+    .header-right ul{
+        float:none;
+       }
+    
+    .header-right li{
+        width:33.3%;
+        margin-left:0px;
+    }
+
+}
+
+ 
+

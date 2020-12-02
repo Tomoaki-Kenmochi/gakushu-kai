@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!DOCTYPE html>
+<html lang="ja">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript第１回</title>
+    ​
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    ​
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    ​
+    <link rel="stylesheet" href="index.css">
+    ​
+    <!-- JavaScriptを別ファイルから読み込む為のコード（src="???.js" の部分でパスを指定。.css ファイルを link タグで呼び込むのと同じです） -->
+    <script src="index.js"></script>
+    <!-- 今回は「.js」ファイルは使いません。「body下部」の script タグで処理します -->
+    ​
+</head>
+​
+
+<body>
+    <div class="text-center mt-5 mb-5">
+        <button type="button" class="btn btn-primary btn-lg m-2">押して名前を入れて下さい</button>
+    </div>
+    ​
+    <!-- JavaScript を HTML ファイルから読み込む為のコード（body 内の最下部に置く。先に上から順に、body の中身を読み込む必要がある為） -->
+    ​
+    <script>
+        const button = document.querySelector('button');
+
+        button.onclick = function () {
+            let name = prompt('あなたの名前は何ですか？');
+            alert('こんにちは、' + name + 'さん、初めまして！');
+        }
+    </script>
+    ​
+    <!-- 参考リンク=> https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/Variables#What_is_a_variable -->
+    ​
+</body>
+​
+
+</html>
+
+</html>

@@ -1,0 +1,89 @@
+今回の内容のまとめです。
+
+● 前回の振り返り：
+・float の特徴と擬似要素
+・flexbox の方法（２通り、flexbox: または display: flex; ）と float との比較
+    flexbox は、複数の要素を等間隔で横並びにする技法に特化している。
+    float は、付与した要素を簡単に、比較的自由に配置することができるが、特徴的な動き方と、clearfix による高さんの制御に注意。
+・flexbox の特徴
+    https://developer.mozilla.org/ja/docs/Learn/CSS/CSS_layout/Flexbox
+・bootstrap と font-awesome、twitter 埋め込みについては、後ほど扱います。
+
+● 提出して頂いた課題の紹介：
+・ちばっしーさん
+    コードが綺麗で細かく、完成度が高いと思います。ほぼ bootstrap のみで完結している。
+    このような場合、インターネット接続されていないと、bootstrap が反映されず、デザインが崩れるので、ローカルの開発環境で確認する際は気をつけてください。
+    container-fluid（横幅が画面いっぱいの container）を活用するともっと良いと思います。
+        https://www.w3schools.com/bootstrap4/bootstrap_containers.asp
+    mt mb など、bootstrap 独自の余白の付け方を活用していました。
+        https://getbootstrap.jp/docs/4.2/utilities/spacing/
+    「d」というbootstrap 独自のクラスも活用されていました。
+        https://getbootstrap.jp/docs/4.2/utilities/display/
+    レスポンシブ対応については、僕のパソコンで見た時、開発ツールでスマホで表示した場合、右側に余白ができる（枠をはみ出している項目がありました（row の？））
+
+・のぎのめぐみさん
+    「COMOLYとは？」の横並びを float と擬似要素で実現していました（COMOLY のトップページと同じ方法を検証してくださいました）。
+        https://comoly.jp/
+    display: flex; による横並びを使いこなしていました。
+        https://developer.mozilla.org/ja/docs/Web/CSS/justify-content
+    要素の枠に影、ボタンの色にグラデーションをつけていた。
+    レスポンシブ対応については、、おおきな崩れはなく、綺麗に仕上がっていたと思います。
+    font-awesome（アイコン）の使い方を後ほどご紹介します（面倒で省いていた：本人談）。
+
+・ゆうひさん
+    いつも課題提出してくださって、積極性が素晴らしいと思います。
+    レスポンシブ対応の面で、苦労されている印象でした。
+    案件のアイコンの並びが大きさによって大きく変わる（その他、要素の余白の取り方で、少し甘い部分が目立ちました）
+
+● レスポンシブ対応の仕方：
+様々な方法がありますが、ここではその中から、bootstrap と、 @media（media クエリの機能の一部）を使用する方法を紹介します。
+・bootstrap の使い方のおさらい（適用する CSS ファイルを HTMLファイルの head に meta タグで指定する書き方と同じ）
+    https://getbootstrap.jp/docs/4.5/getting-started/introduction/
+・Grid system について（container, row, col のセット。table タグや、Excel などの構造と非常に似てます）
+    https://getbootstrap.jp/docs/4.2/layout/grid/
+・PC、タブレット、スマホの対応の仕方（端末の機種によって微妙に異なるので、ブラウザの開発ツールで確認できる、各種端末のサイズを目安にすると良いです）
+    Grid system によるレスポンシブ対応の仕方
+        https://getbootstrap.jp/docs/4.2/layout/grid/#grid-options
+・@media の使い方
+    https://developer.mozilla.org/ja/docs/Web/CSS/@media
+
+先週のご質問にもありましたが、bootstrap　と @media は共存可能です。
+関連しそうな部分だと、HTML ファイルの head に書く順番があります。先に書かれた CSS ファイルのセレクタのプロパティは、後に書かれた CSS ファイルに書かれた、同じセレクタのプロパティに上書きされます。
+
+今日のご質問で、bootstrap を使う利点について問われました。
+1番は、やはり CSS ファイルのコードが少なくて済むので、ページの保守や改修が簡単になる事です。
+ただし、チームで開発する際など、コードの構造やルール、ロジックが共有されていないと困ったことになるので、
+レシポンシブ対応に限らず、開発で採用する技法や技術に関しては「チームのメンバーで方針を決めて共有する事」が、極めて重要になります。
+
+・その他、bootstrap でできること
+    プルダウン形式のナビゲーションバー
+    ボタン
+    カード
+    モーダルなどなど
+        参考
+        https://www.sejuku.net/blog/108671
+        https://getbootstrap.com/docs/4.1/layout/overview/
+
+
+● fontawesome
+・bootstrap の方に最初から実装されてます（が、バージョンが把握しづらいので、自分で管理して入れた方が扱いやすいと思います）
+    https://fontawesome.bootstrapcheatsheets.com/#
+・使い方のおさらい
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    上のコードを HTML の head タグの中に置くです。さきほども述べたように、意図しない上書きを防止する為に、他の CSS ファイルよりも先に書いた方が良いです。
+・アイコンの使い方、デザイン変更の仕方
+    https://saruwakakun.com/html-css/basic/font-awesome
+
+● Twitter の埋め込み：
+・埋め込み方
+    https://help.twitter.com/ja/using-twitter/embed-twitter-feed
+・デザインなど設定変更もできます
+    https://publish.twitter.com/#
+
+● 皆さんからのご質問や感想のなど：
+    Q. 書いたコードがどの部分に当たるのか、わからなくなってしまう。
+    A. その場合、該当箇所にメモ書きを残すと良いでしょう。また、開発ツールから要素に矢印を当てて探る方法もあります。
+
+● 今後の方針とご希望：
+    次週の学習会はお休みして、再来週から、JavaScript でプログラミング体験企画を始めたいと思います。
+    来週は、学習会がない代わりに、オンラインで交流会？的なことをやってみるのも良いかなと考えています。

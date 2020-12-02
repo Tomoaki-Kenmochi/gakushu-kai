@@ -1,0 +1,9 @@
+例 4: スタイルシートを利用する
+document オブジェクト上の styleSheets プロパティは、その document に読み込まれたスタイルシートの一覧を返します。このページの例に示されているように、stylesheet、style、CSSRule
+オブジェクトを利用して、これらのスタイルシートとそのルールに個別にアクセスが可能です。そしてこの例では、すべてのスタイル・ルールのセレクタ (selector) がコンソールへ表示されます。
+
+var ss = document.styleSheets;
+
+for(var i = 0; i < ss.length; i++) { for(var j=0; j < ss[i].cssRules.length; j++) { dump( ss[i].cssRules[j].selectorText
+    + "\n" ); } } 以下の 3 つのルールが定義される単一のスタイルシートが附属されているドキュメント用に対して: body { background-color: darkblue; } p { font-face:
+    Arial; font-size: 10pt; margin-left: .125in; } #lumpy { display: none; } このスクリプトは以下の項目を表示します: BODY P #LUMPY

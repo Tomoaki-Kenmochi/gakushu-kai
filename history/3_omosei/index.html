@@ -1,0 +1,234 @@
+<!-- コメントアウトの仕方　Macであれば「command」+「/」、Windowsであれば「Ctrl」+「/」を押します。 -->
+
+<!-- ファイルのドキュメントタイプ HTML5以降、仕様が変わったが、念の為に記載が必要-->
+<!DOCTYPE html>
+
+<!-- このHTMLファイルが日本語で出力されるの表明 念のために記載 -->
+<html lang="ja">
+
+<!-- HTMLのheadダグ ここで設定を記述 -->
+
+<head>
+
+  <!-- 文字のエンコーディングの種類　ここでは日本語　他に euc-jp shift_jis がある（文字化けする）-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- stylesheet で使うファイル名（パス） -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- ページのタイトル -->
+  <title>デモページ｜COMOLYのランディングページ</title>
+
+</head>
+
+<!-- 直接、ページの内容に反映されるコード -->
+
+<body>
+  <header>
+    <table>
+      <tr>
+        <td class="left">
+          <span class="left-inner">
+            <a href="">
+              <img src="images/logo_white.png" class="left_inner_image">
+            </a>
+          </span>
+        </td>
+        <td class="right">
+          <a class="right_inner_link" href="">
+            <span class="right_inner">
+              Q&A
+            </span>
+          </a>
+          <a class="right_inner_link" href="">
+            <span class="right_inner">
+              ログイン
+            </span>
+          </a>
+          <a class="right_inner_link" href="">
+            <span class="right_inner new-link">
+              新規登録
+            </span>
+          </a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="bottom">
+      <img src="images/mac-image.png" class="bottom_inner">
+    </div>
+  </header>
+
+  <div id="container">
+    <div class="section-top">
+      <div class="work-header">
+        <h1><strong>COMOLYとは？</strong></h1>
+        <h2>- What is COMOLY? -</h2>
+      </div>
+
+      <div class="section-box">
+        <div class="left-box">
+          <h3>COMOLYはひきこもり当事者向けに <strong>ワーク・コミュニティ</strong>を提供し安心して繋がれる プラットフォームです</h3>
+          <a href="" class="btn btn-jumbotron">
+            <span>登録してみる</span>
+            <i class="fa fa-chevron-right right-arrow"></i>
+          </a>
+        </div>
+        <div class="right-box">
+          <img src="images/Man talking in Living Room.png">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div class="section-middle">
+      <div class="work-header">
+        <h1><strong>ワーク</strong></h1>
+        <h2>- Work -</h2>
+      </div>
+
+      <div class="work-section">
+        <div class="left-box">
+          <img src="images/Work.png">
+        </div>
+        <div class="right-box work-right">
+          <p>まずは弊社スタッフが簡単なヒアリングをして、あなたに合った仕事とマッチング。<br>
+            スキルや得意なことをベースに自宅でできる簡単な入力作業からデザインまで、あなたをサポートしたい企業からの仕事を請け負います。ご自身のペースや希望を尊重しますので、気軽にご相談ください。
+          </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div class="work-type">
+      <img src="images/work01.png">
+      <img src="images/work02.png">
+      <img src="images/work03.png">
+      <img src="images/work04.png">
+      <img src="images/work05.png">
+      <img src="images/work06.png">
+      <img src="images/work07.png">
+      <img src="images/work08.png">
+      <img src="images/work09.png">
+    </div>
+
+    <div class="section-bottom">
+      <div class="work-header">
+        <h1><strong>コミュニティー</strong></h1>
+        <h2>- Community -</h2>
+      </div>
+
+      <div class="community-section">
+        <div class="left-box community-left">
+          <p>
+            COMOLYに登録している方がイラストや写真、漫画を投稿したり閲覧したりできます。あなたの感性を活かした作品・成果物をぜひシェアしてみてください。<br>
+            ユーザーが参加できるイベントをオンラインとオフラインで開催します。ユーザーとサポーターを繋ぐ有意義な場所・空間を創ります。
+          </p>
+        </div>
+        <div class="right-box community-right">
+          <img src="images/Community.png">
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <a href="" class="btn btn-center">
+        <span>新規登録</span>
+        <i class="fa fa-chevron-right right-arrow"></i>
+      </a>
+    </div>
+
+    <div class="information-section">
+      <div class="work-header">
+        <h1><strong>お知らせ</strong></h1>
+        <h2>- Information -</h2>
+      </div>
+
+      <ul class="information-list">
+        <a href="">
+          <li>
+            <div class="link-color">
+              <span class="event">イベント</span>
+              <span class="show-date">2020年8月26日(水)</span>
+              <span class="show-title">9月15日（火）19:30〜 ＜第4回 COMOLYオンラインセミナーのお知らせ＞</span>
+            </div>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <div class="link-color">
+              <span class="event">イベント</span>
+              <span class="show-date">2020年8月4日(火)</span>
+              <span class="show-title">「プログラミングとは何か？」第３回COMOLYオンラインセミナー</span>
+            </div>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <div class="link-color">
+              <span class="event">イベント</span>
+              <span class="show-date">2020年7月3日(金)</span>
+              <span class="show-title">「人と話すのが怖くならない 簡単にできる話し方入門」第2回 COMOLYオンラインセミナー</span>
+            </div>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <div class="link-color">
+              <span class="event">イベント</span>
+              <span class="show-date">2020年6月6日(土)</span>
+              <span class="show-title">キャラ絵の描き方講座　COMOLYオンラインセミナー</span>
+            </div>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <div class="link-color">
+              <span class="event">イベント</span>
+              <span class="show-date">2020年5月18日(月)</span>
+              <span class="show-title">5月28日 19時〜　オンラインカフェ開催のお知らせ</span>
+            </div>
+          </li>
+        </a>
+      </ul>
+
+      <div class="blog-section">
+        <a href="https://note.com/comoly_staff">
+          <img class="blog-img" src="images/staff_blog.png">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer-container">
+      <nav class="link-company">
+        <ul>
+          <li class="nav-list"><a href="">利用規約</a></li>
+          <li class="nav-list"><a href="">プライバシーポリシー</a></li>
+          <li class="nav-list"><a href="">運営会社</a></li>
+        </ul>
+        <div class="sns-icons">
+          <a href="https://twitter.com/COMOLY1"><span class="twitter-color"><i class="fab fa-twitter "></i></span></a>
+          <a href="https://www.facebook.com/groups/1264611343736699/"><span class="facebook-color"><i
+                class="fab fa-facebook-f"></i></span></a>
+          <a href="https://lin.ee/iewqzug"><img
+              src="images/line_icon-69708962d5aa7331fa85da344e8567212f37bf18fc7828743365ccad1490c287.png" width="40"
+              height="40"></a>
+        </div>
+      </nav>
+
+      <a class="twitter-timeline" data-width="250" data-height="255"
+        href="https://twitter.com/COMOLY1?ref_src=twsrc%5Etfw">Tweets by COMOLY1</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="clear"></div>
+
+      <p class="copyright">Copyright © Meta Anchor Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
