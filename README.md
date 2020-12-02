@@ -1,5 +1,8 @@
 # COMOLY プログラミング学習会
 
+GitHub Desktop をインストールして下さい。以下の記事が参考になります。
+https://docs.github.com/ja/free-pro-team@latest/desktop/installing-and-configuring-github-desktop/setting-up-github-desktop
+
  参加は、完全に無料です。追加のコンテンツなども、全て無料です。
  毎週木曜日の夜22時から、１時間ほど開催する予定です。
  毎回、前日までに メールや Slack で開催の告知をします。
