@@ -1,0 +1,130 @@
+body{margin: 0;
+  color:#444141;}
+a {
+  text-decoration: none;
+}
+
+header{background-color: #3bb2b8;}
+
+table{width: 100%;}
+
+.left{
+  width: 50%;
+}
+.left_inner{
+
+}
+.left_inner_image{
+  width: 40%;
+  margin: 0 0 3% 15%;
+}
+
+.right{
+  vertical-align: top;
+  text-align: right;
+  padding: 2%;
+  width: 50%;
+}
+
+.right_inner{
+  vertical-align: top;
+  text-align: center;
+  width: 10%;
+  padding: 1% 1% 0 0;
+}
+.right_inner_text{
+  padding: 2%;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 10%;
+}
+.right_inner_link{
+  color: white;
+  text-decoration: none;
+  margin: 0 0 0 5%;
+  width: 10%;
+}
+.bottom{
+  text-align: center;
+  padding: 2%;
+  /* height: 300px; /*heightの場合、親要素にもpx(絶対値)で指定する必要がある（widthの場合はデフォルトで指定されている湯尾なので不要）*/
+}
+.bottom_inner{
+  width: 40%;
+  /* height: 100%; /*指定したいheightの子要素*/
+}
+.header_2{
+  text-align: center;
+  color: #0cd4ec;
+  font-size: 2.5rem;
+  border-bottom: 15px solid #c0eff1;
+  margin: 15px 40% 0;
+}
+.header_3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.intro{
+  width: 50%;
+  margin: 60px auto;
+}
+.intro_1{
+  width: 50%;
+}
+.intro_1_inner{
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+.intro_1_inner_bold{
+
+  color: #0cd4ec;
+  border-bottom: 15px solid #c0eff1;
+}
+.intro_1_inner_link
+{
+}
+
+.intro_1_inner_button{
+  background-color: #ff5858;
+  text-align: center;
+  width: 70%;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  margin: 50px 30px 0 auto;
+}
+
+.comoly_image_1{
+  width: 50%;
+  text-align: center;
+}
+.comoly_image_1_inner{
+  width: 100%;
+}
+.soto{
+  background-color: red;
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+}
+.naka{
+  background-color: yellow;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+.uchi{
+  background-color: green;
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+}
+.division{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
